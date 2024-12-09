@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Masham Limited</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Google Fonts and Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Masham<span>Limited</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Page Section -->
+    <section class="contact-page fade-in">
+        <div class="container">
+            <h2>Contact Us<i class="fas fa-comments"></i></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p><i class="fas fa-paper-plane"></i></p>
+                    <p>We would love to hear from you. Reach out to us for inquiries, project discussions, or any other information.</p>
+                    <address>
+                        <strong>Address:</strong> F6, Karen Professional Center, Karen Road, Nairobi, Kenya<br>
+                        <strong>Phone:</strong> <a href="tel:+254797135535">0797 135535</a><br>
+                        <strong>Email:</strong> <a href="mailto:mashamlimited@gmail.com">mashamlimited@gmail.com</a>
+                    </address>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <!-- Add more social icons as needed -->
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Name <span>*</span></label>
+                            <input type="text" id="name" name="name" required>
+                            <small class="error" id="nameError">Please enter your name.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email <span>*</span></label>
+                            <input type="email" id="email" name="email" required>
+                            <small class="error" id="emailError">Please enter a valid email.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message <span>*</span></label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <small class="error" id="messageError">Please enter your message.</small>
+                        </div>
+                        <button type="submit" class="cta-button">Send Message</button>
+                        <p class="form-message"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Masham Limited. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a> |
+                <a href="about.html">About Us</a> |
+                <a href="services.html">Services</a> |
+                <a href="projects.html">Projects</a> |
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YeMN6Xb1B0hD8UFc5M8fR7KqUljtJj1J2Q4PnBQZz7u9qV9l7XhXgBDr8+wVqYV+y8yd6Jw5OXulF/xTMLw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
