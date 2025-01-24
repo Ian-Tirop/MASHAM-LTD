@@ -35,9 +35,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const revealOnScroll = () => {
         sections.forEach(section => {
-            const rect = section.getBoundingClientRect();
-            if (rect.top < window.innerHeight - 100) {
-                section.classList.add('show');
+            if (section && section.classList) { // Check for valid elements
+                const rect = section.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    section.classList.add('show');
+                }
             }
         });
     };
@@ -81,8 +83,6 @@ let currentTestimonial = 0;
 // Total number of testimonials
 const totalTestimonials = testimonialItems.length;
 
-// Initialize the first testimonial as active
-testimonialItems[currentTestimonial].classList.add('active');
 
 // Function to update the active testimonial
 const updateTestimonial = () => {
